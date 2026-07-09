@@ -56,3 +56,5 @@ sudo apt update
 sudo apt install nginx -y
 systemctl status nginx --no-pager
 echo '<h1>Deployed by Cameron Crenshaw</h1><p>Azure Linux VM lab</p>' | sudo tee /var/www/html/index.html
+
+ssh -i $HOME\.ssh\vm-linux-web-001_key.pem azureuser@20.121.207.251
